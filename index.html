@@ -1,0 +1,237 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 4.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=" UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spark Foundation</title>
+
+
+  <style type="text/css">
+    /* General Styles */
+    body {
+      margin: 0 !important;
+      padding: 0 !important;
+      font-family: sans-serif;
+      color: black;
+
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    table {
+      border-spacing: 0;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td {
+      padding: 0;
+    }
+
+    /* Media Queries */
+    @media only screen and (max-width: 600px) {
+      .mobile {
+        width: 100% !important;
+        padding: 0 !important;
+      }
+
+      .hero img {
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      .headline {
+        font-size: 24px !important;
+        text-align: center !important;
+      }
+
+      .headline p,
+      .body-text p,
+      .footer p {
+        font-size: 16px !important;
+        text-align: center !important;
+      }
+
+      .text {
+        font-size: 18px !important;
+        padding: 2px 0px 0px 0px !important;
+      }
+    }
+
+    @media only screen and (max-width: 510px) {
+      .block {
+        display: block !important;
+        width: 100% !important;
+      }
+
+      .hero img {
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      .headline {
+        padding: 0 20px !important;
+      }
+
+      .footer {
+        padding: 10px !important;
+      }
+    }
+  </style>
+
+</head>
+
+<body id="body" style="margin: 0 !important; padding: 0 !important; background-color: green;">
+
+  <table borders="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td align="center">
+
+        <!--Table 600px wide -->
+        <table border="0" class="mobile" cellpadding="0" cellspacing="0" role="presentation" width="600px" style="margin: 0 auto; background-color: antiquewhite; padding: 0; 
+          color: black; font-family: sans-serif; font-size: 18px; line-height: 36px;">
+
+          <!--Block background-->
+
+          <tr>
+            <td height="10" style="background-color: rgb(255, 123, 0);">
+            </td>
+          </tr>
+
+          <!--Logo-->
+          <tr>
+            <td align="" style="padding: 10px;">
+
+              <img align="center"
+                src="https://media.istockphoto.com/id/1180155588/de/vektor/vektor-design-vorlage-f%C3%BCr-unternehmen-team-work-abstraktes-symbol.jpg?s=1024x1024&w=is&k=20&c=KvG1YYv5BG03XyOy1lavjASzyqXvGihNsI5jgSnQAeQ="
+                width="80" border="0" alt="The Sparks Foundation"
+                style="display: block; margin: 0 auto; border-radius: 40px;">
+
+              <h3 class="text" style="padding: 2px; font-size: medium; text-align: center;">The Sparks Foundation</h3>
+
+            </td>
+          </tr>
+
+          <!--Headline-->
+
+          <tr>
+            <td class="headline" style="padding: 2px;">
+              <h1 style="font-size: 24px; text-align: center; margin: 0 auto;">
+                Welcome to The Sparks
+                Foundation
+              </h1>
+            </td>
+          </tr>
+
+          <!--Hero Image-->
+
+          <tr>
+            <td align="center" width="100%">
+              <img class="hero"
+                src="https://media.istockphoto.com/id/2094337676/de/foto/vielf%C3%A4ltiges-team-das-in-einem-modernen-co-working-space-zusammenarbeitet.jpg?s=612x612&w=0&k=20&c=u-qaFGJCEDfyMF-UXWecfIOI_289RC73LML-W8Y7jY8="
+                width="600px" alt="The Sparks Foundation"
+                style=" border-radius: 4px; max-width: 100%; display: block; margin: 0 auto;">
+            </td>
+
+          </tr>
+
+          <!--Body Text-->
+
+          <tr>
+            <td style="padding: 20px;">
+              <p style="font-size: 16px; line-height: 1.5; text-align: center; padding: 0 20px;">
+                Dear User, <br>
+                <br>
+                Thank you for registering with us. We are glad to have you on board. <br>
+                <br>
+                Your account has been created successfully. <br>
+                <br>
+              </p>
+
+              <p style="font-size: 16px; line-height: 1.5; text-align: center; padding: 0 20px;">
+                <strong>Username:</strong> {{ $user->name }} <br>
+                <strong>Email:</strong> {{ $user->email }} <br>
+                <strong>Password:</strong> ******** <br>
+              </p>
+
+              <p style="font-size: 16px; line-height: 1.5; text-align: center; padding: 0 20px;">
+                Please keep your credentials safe and do not share them with anyone. <br>
+                <br>
+                You can now login to your account and start exploring our services. <br>
+                <br>
+                <a href="{{ route('login') }}" style="background-color: #4CAF50; color: white; padding: 10px 20px; 
+                text-decoration: none; border-radius: 5px;">Login</a>
+
+              </p>
+
+              <p style="font-size: 16px; line-height: 1.5; text-align: center; padding: 0 20px;">
+                If you have any questions or need help, feel free to contact us at <a href="mailto:">
+                  <strong>The Sparks Foundation Team</strong>
+                </a>
+
+              </p>
+
+              <p style=" font-size: 16px; line-height: 1.5; text-align: center; padding: 0 20px;">
+                Thank you, <br>
+                The Sparks Foundation Team
+              </p>
+
+            </td>
+          </tr>
+
+        </table>
+
+        <!-- Footer Container Table 600px wide -->
+
+        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td class="footer" style="background-color: rgb(255, 123, 0); padding: 10px 10px 15px 12px;">
+              <p style="font-size: 16px; line-height: 1.5; text-align: center; color: white; padding: 0 20px;">
+                &copy; 2021 The Sparks Foundation. All Rights Reserved.
+              </p>
+
+              <p style="font-size: 16px; line-height: 1.5; text-align: center; color: white; padding: 0 20px;">
+                <a href="https://www.thesparksfoundationsingapore.org/"
+                  style="color: white; text-decoration: none;">Visit
+                  Our Website</a>
+              </p>
+
+              <p style="font-size: 16px; line-height: 1.5; text-align: center; color: white; padding: 0 20px;">
+                <a href="https://www.thesparksfoundationsingapore.org/contact-us/"
+                  style="color: white; text-decoration: none;">Contact
+                  Us</a>
+              </p>
+
+              <p style="font-size: 16px; line-height: 1.5; text-align: center; color: white; padding: 0 20px;">You're
+                receiving this email because you registered with us. We're glad to
+                have you!
+                Don't worry, <a href="#">you can unsubscribe here</a> if you'd like.</p>
+              <p style="font-size: 16px; line-height: 1.5; text-align: center; color: white; padding: 0 20px;">Email
+                Sender - 48372 Murphy St., Someplace, MI 93827</p>
+
+
+
+            </td>
+          </tr>
+        </table>
+
+
+
+      </td>
+    </tr>
+  </table>
+
+
+
+</body>
+
+</html>
